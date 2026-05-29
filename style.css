@@ -1,0 +1,82 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+p, h2 {
+    position: relative;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    padding-bottom: 8px;
+}
+
+p {
+    font-size: 21px;
+}
+
+.contact {
+    position: relative;
+    top: 32px;
+}
+
+.contact p {
+    display: grid;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+body {
+    display: grid;
+}
+
+#frame {
+    display: grid;
+}
+
+#main-logo {
+    position: relative;
+    bottom: 16px;
+    top: 0px;
+    justify-self: center;
+    max-width: 200px;
+    margin: 0;
+    height: 200px;
+}
+
+#contact-title {
+    font-size: 21px;
+    bottom: 8px;
+}
+
+/* Als op PC */
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        align-content: center;
+    }
+    #frame { 
+        display: grid;
+        justify-content: center;
+    }
+    .intro h2, .intro p {
+        display: grid;
+        justify-content: center;
+        max-width: 1000px;
+    }
+    #main-logo {
+        max-width: 320px;
+        height: 320px;
+    }
+}
