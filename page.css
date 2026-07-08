@@ -1,0 +1,193 @@
+
+
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: auto;
+  font-size: 32pt;
+  font-weight: 600;
+  justify-items: center;
+}
+
+.page {
+    display: grid;
+    justify-items: center;
+    width: 100vw;
+    padding-bottom: 0;
+    height: auto;
+}
+
+.page-background {
+    position: fixed;
+    height: 100vh;
+    aspect-ratio: 1;
+    justify-self: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    z-index: -1;
+    max-height: 100vh;
+}
+
+.page-background img{
+    height: 77%;
+    aspect-ratio: 1;
+    opacity: .2;
+    position: relative;
+}
+
+.page-titles {
+  margin-top: 24px;
+}
+
+.page-title {
+    display: grid;
+    justify-content: center;
+}
+
+.page-text {
+    display: grid;
+    font-size: 20px;
+    font-weight: 700;
+    justify-content: center;
+      width: 100%;
+    max-width: 90vw;
+}
+
+.bellen {
+    border: 2px white solid;
+    padding: 24px 12px;
+    margin: 14px;
+    width: 100%;
+    max-width: 90vw;
+}
+
+.info-text {
+    border: 2px white solid;
+    padding: 24px 36px;
+    margin: 14px;
+    font-size: 19px;
+    text-justify: center;
+}
+
+/* Slider gallery */
+
+.slider {
+  position: relative;
+  max-width: 90vw;
+  max-height: 60vh;
+  aspect-ratio: .7;
+  margin: auto;
+  overflow: hidden; 
+  margin-top: 12px;
+  border: white 4px solid;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-track img {
+  width: 100%;
+  display: block;
+  flex-shrink: 0;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  border: white 4px solid;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+
+
+/* OPENINGSTIJDEN */
+
+.openingstijden {
+    border: 2px white solid;
+    padding: 24px 12px;
+    margin: 14px 16px;
+    width: 100%;
+    max-width: 90vw;
+}
+
+.open-title {
+  font-size: 35px;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+
+.openingstijden-wrapper {
+  display: grid;
+}
+
+.tijd-row {
+  display: flex;
+  flex-direction: row;
+  font-size: 19px;
+}
+
+.item {
+  display: grid;
+  justify-content: center;
+  margin: 0 8px;
+}
+
+.day {
+  flex: 1;
+  justify-content: left;
+  padding-left: 12px;
+}
+
+.time {
+  margin-left: 12px;
+  flex: 1;
+}
+
+.page-footer {
+  display: grid;
+  padding: 0;
+  margin: 0;
+}
+
+.back-button {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+  border: white 2px solid;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: grid;
+  font-size: 13pt;
+  justify-content: center;
+  align-content: center;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .page {
+    max-width: 600px;
+  }
+}

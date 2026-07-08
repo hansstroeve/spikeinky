@@ -1,9 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-color: black;
     font-size: 27px;
     text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 p, h2 {
@@ -19,7 +30,7 @@ h2 {
 }
 
 p {
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .contact {
@@ -35,26 +46,113 @@ p {
 }
 
 body {
-    display: grid;
+    display: block;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 #frame {
-    display: grid;
+    display: block;
+    width: 100%;
+    gap: 0;
 }
 
 #main-logo {
     position: relative;
-    bottom: 16px;
     top: 0px;
     justify-self: center;
-    max-width: 200px;
     margin: 0;
-    height: 200px;
+    height: 160px;
 }
 
 #contact-title {
     font-size: 21px;
     bottom: 8px;
+}
+
+.column-container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin-top: 32px;
+}
+
+.column {
+    flex: 1;
+    display: grid;
+}
+
+.content-wrapper {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.title-button {
+    display: grid;
+    border: white dashed 2px;
+    font-weight: 600;
+    color: white;
+    padding: 4px 20px;
+    min-width: 80px;
+    justify-content: center;
+}
+
+.layer1 {
+    display: block;
+    justify-items: center;
+    height: min-content;
+}
+
+.logo-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+.image-button {
+    width: 130px;
+    height: 130px;
+    margin-top: 8px;
+}
+
+.image-button img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.intro {
+    margin-top: 0;
+    top: 0;
+}
+
+.intro h2, .intro p {
+    display: grid;
+    justify-content: center;
+}
+
+.footer {
+    display: grid;
+    width: 100%;
+    margin-top: 32px;
+    border-top: white 2px dashed;
+    height: 72px;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    top: auto;
+    position: relative;
+    margin-bottom: 0;
+    top: auto;
+    bottom: 0;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /* Als op PC */
@@ -63,7 +161,6 @@ body {
         display: grid;
         width: 100vw;
         height: 100vh;
-        overflow: hidden;
         align-content: center;
     }
     #frame { 
