@@ -181,6 +181,11 @@ body {
         display: grid;
         justify-content: center;
     }
+
+    .intro {
+        max-width: 1000px;
+    }
+
     .intro h1 {
         display: grid;
         justify-content: center;
