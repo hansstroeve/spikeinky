@@ -126,6 +126,8 @@ body {
 .intro {
     margin-top: 16px;
     top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .intro h1 {
