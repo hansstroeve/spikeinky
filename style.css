@@ -181,10 +181,17 @@ body {
         display: grid;
         justify-content: center;
     }
-    .intro h1, .intro p {
+    .intro h1 {
         display: grid;
         justify-content: center;
         max-width: 1000px;
+    }
+    
+    .intro p {
+        display: inline;
+        justify-content: center;
+        max-width: 1000px;
+        color: white;
     }
     #main-logo {
         max-width: 320px;
