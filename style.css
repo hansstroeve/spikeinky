@@ -91,7 +91,7 @@ body {
 
 .title-button {
     display: grid;
-    border: white dashed 2px;
+    border: white solid 2px;
     font-weight: 600;
     color: white;
     padding: 4px 20px;
@@ -152,7 +152,7 @@ body {
     display: grid;
     width: 100%;
     margin-top: 32px;
-    border-top: white 2px dashed;
+    border-top: white 2px solid;
     height: 72px;
     align-content: center;
     justify-content: center;
@@ -172,6 +172,8 @@ body {
 }
 
 #insta-a {
+    position: relative;
+    margin-top: 16px;
     display: grid;
     aspect-ratio: 1;
     width: 48px;
