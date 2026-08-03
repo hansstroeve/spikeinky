@@ -154,7 +154,7 @@
                 data.files.forEach(file => {
                     const img = document.createElement('img');
                     img.src = `https://lh3.googleusercontent.com/d/${file.id}`;
-                    img.alt = file.name;
+                    img.alt = "";
                     img.loading = 'lazy';
                     galleryDiv.appendChild(img);
                 });

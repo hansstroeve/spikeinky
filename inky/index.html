@@ -103,7 +103,7 @@
 
         <div class="slider">
             <div class="slider-track" id="gallery">
-                
+
             </div>
 
             <button class="btn prev" onclick="moveSlide(-1)">&#10094;</button>
@@ -150,7 +150,7 @@
                 data.files.forEach(file => {
                     const img = document.createElement('img');
                     img.src = `https://lh3.googleusercontent.com/d/${file.id}`;
-                    img.alt = file.name;
+                    img.alt = "";
                     img.loading = 'lazy';
                     galleryDiv.appendChild(img);
                 });
